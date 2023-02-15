@@ -1,0 +1,37 @@
+<div class="form">
+    <form [formGroup]="testform" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Username</label>
+            <input type="name" class="form-control" id="exampleInputName1" formControlName="name" >
+            <span class="err" *ngIf="testform.get('name')?.invalid && testform.get('name')?.touched">*Please enter your name</span>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Mobile</label>
+            <input type="number" class="form-control" id="exampleInputNumber1" formControlName="number" minlength="10">
+            <span class="err" *ngIf="testform.get('number')?.invalid && testform.get('number')?.touched">*Please enter your Ten digit Number</span>
+          </div>
+
+          <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1"   formControlName="email"  ngModel email>
+          <span class="err" *ngIf="testform.get('email')?.invalid && testform.get('email')?.touched">*Please enter your Email</span>
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"  formControlName="password" >
+          <span class="err" *ngIf="testform.get('password')?.invalid && testform.get('password')?.touched">*Please enter your
+            Password</span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" >Register</button>
+        <div style="text-align: right;"> 
+           
+            <button type="submit" class="btn btn-primary" routerLink="/login" >Login</button>
+            <p class="para">Alreasy Existing User ?? Login here</p>
+        </div>
+        
+    </form>
+    </div>
+    

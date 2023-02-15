@@ -1,0 +1,45 @@
+{
+  "signin": [
+    {
+      "name": "Mahesh123",
+      "email": "Mahesh@gmail.com",
+      "number": "1111111",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Ramesh",
+      "email": "ramesh@gmail.com",
+      "password": "12345",
+      "number": 778899998,
+      "id": 2
+    },
+    {
+      "name": "Charan",
+      "email": "Charan@gmail.com",
+      "password": "12345",
+      "number": 9988776655,
+      "id": 3
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
